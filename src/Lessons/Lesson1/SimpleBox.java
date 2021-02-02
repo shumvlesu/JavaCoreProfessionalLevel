@@ -1,17 +1,17 @@
 package Lessons.Lesson1;
 
-public class SimpleBox {
-  private Object obj;
+public class SimpleBox<T> {
+  private T obj;
 
-  public SimpleBox(Object obj) {
+  public SimpleBox(T obj) {
     this.obj = obj;
   }
 
-  public Object getObj() {
+  public T getObj() {
     return obj;
   }
 
-  public void setObj(Object obj) {
+  public void setObj(T obj) {
     this.obj = obj;
   }
 }
