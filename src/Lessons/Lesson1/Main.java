@@ -1,5 +1,8 @@
 package Lessons.Lesson1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 //Урок 1. Обобщения (дженерики)
 public class Main {
   public static void main(String[] args) {
@@ -30,6 +33,27 @@ public class Main {
     //Смотрим какие типы у переменных
     System.out.println(simpleBoxIS.getObj().getClass().getName());
     System.out.println(simpleBoxIS.getObj2().getClass().getName());
+
+
+    System.out.println();
+    //3й пример, с коллекциями
+    List<SimpleBox<? extends Number>> simpleBoxes = new ArrayList<>();
+    for (int i = 0; i < 10; i++) {
+      simpleBoxes.add(new SimpleBox<>(i*10));
+    }
+    System.out.println("Среднее арифметическое ="+average(simpleBoxes));
+
+
+
+  }
+
+  private static double average(List<SimpleBox<? extends Number>> simpleBoxes){ //? extends Number - позволяет нам не делать перегрузку метода
+    //для каждого числового типа (Byte, Integer, Long и т.д.) а наследоваться от общего числового класса Number
+    double sum = 0;
+    for (SimpleBox<? extends Number> simpleBox : simpleBoxes) {
+      sum+=simpleBox.getObj().doubleValue(); //doubleValue() - приводим число к представлению типа double
+    }
+    return sum/simpleBoxes.size();
   }
 
   private static void concatenateString(SimpleBox<String> simpleBox,SimpleBox<Integer> simpleBox1) {
