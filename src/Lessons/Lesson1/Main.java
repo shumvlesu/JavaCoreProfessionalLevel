@@ -4,7 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Урок 1. Обобщения (дженерики)
-public class Main {
+public class Main<U> {
+  //Для статических членов класса обобщение не работает
+  //static U obj;
+  U obj; //а так работает
+
   public static void main(String[] args) {
     SimpleBox<Integer> simpleBox = new SimpleBox<>(20);
     SimpleBox<Integer> simpleBox1 = new SimpleBox<>(50);
