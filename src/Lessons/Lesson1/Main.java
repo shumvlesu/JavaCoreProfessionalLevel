@@ -2,6 +2,7 @@ package Lessons.Lesson1;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 //Урок 1. Обобщения (дженерики)
 public class Main<U> {
@@ -48,6 +49,14 @@ public class Main<U> {
     System.out.println("Среднее арифметическое ="+average(simpleBoxes));
 
 
+    System.out.println();
+    //4й пример с коровками и овечками
+    Corral<Cow> cows = new Corral<>();
+    Corral<Sheep> sheeps = new Corral<>();
+    for (int i = 0; i < 5; i++) {
+      cows.addAnimal(new Cow(Integer.toString(i),i,new Random().nextInt(10)));
+      sheeps.addAnimal(new Sheep(Integer.toString(i),i,new Random().nextInt(10)));
+    }
 
   }
 
