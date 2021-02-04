@@ -38,9 +38,9 @@ public class Main {
   //Метод который меняет два элемента массива местами
   private static <T> void exchangeOfElements(T[] array, int aPosition, int bPosition) {
     System.out.printf("Массив до обмена: %s\n",Arrays.toString(array));
-    T bufer = array[aPosition];
+    T buffer = array[aPosition];
     array[aPosition]=array[bPosition];
-    array[bPosition]=bufer;
+    array[bPosition]=buffer;
     System.out.printf("Массив после обмена: %s\n",Arrays.toString(array));
   }
 
