@@ -32,7 +32,6 @@ public class Main {
     //Не забываем про метод добавления фрукта в коробку.
 
 
-
   }
 
   //Метод который меняет два элемента массива местами
@@ -44,10 +43,9 @@ public class Main {
     System.out.printf("Массив после обмена: %s\n",Arrays.toString(array));
   }
 
-
   //Метод который преобразует массив в ArrayList
   private static <T> List<T> arrayToArrayList(T[] array) {
-    List<T> list = new ArrayList<T>();
+    List<T> list = new ArrayList<>();
     Collections.addAll(list, array);
     return list;
   }
