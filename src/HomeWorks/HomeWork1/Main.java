@@ -22,7 +22,7 @@ public class Main {
     System.out.println(stringList2.get(0) instanceof Integer);
 
     //3. Задача:
-    //Даны классы Fruit, Apple extends Fruit, Orange extends Fruit;
+    //Даны классы Fruit, Apple extends Fruit, Orange extends Fruit;+
     //Класс Box, в который можно складывать фрукты. Коробки условно сортируются по типу фрукта, поэтому в одну коробку нельзя сложить и яблоки, и апельсины;
     //Для хранения фруктов внутри коробки можно использовать ArrayList;
 
