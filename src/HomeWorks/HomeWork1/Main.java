@@ -31,14 +31,14 @@ public class Main {
     //Написать метод, который позволяет пересыпать фрукты из текущей коробки в другую. Помним про сортировку фруктов: нельзя яблоки высыпать в коробку с апельсинами. Соответственно, в текущей коробке фруктов не остается, а в другую перекидываются объекты, которые были в первой;
     //Не забываем про метод добавления фрукта в коробку.
 
-    
+
 
   }
 
   //Метод который меняет два элемента массива местами
   private static <T> void exchangeOfElements(T[] array, int aPosition, int bPosition) {
     System.out.printf("Массив до обмена: %s\n",Arrays.toString(array));
-    var bufer = array[aPosition];
+    T bufer = array[aPosition];
     array[aPosition]=array[bPosition];
     array[bPosition]=bufer;
     System.out.printf("Массив после обмена: %s\n",Arrays.toString(array));
