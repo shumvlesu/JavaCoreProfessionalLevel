@@ -3,16 +3,21 @@ package HomeWorks.HomeWork1;
 import java.util.*;
 
 public class Main {
-  public static void main(String[] args) {
-//1. Написать метод, который меняет два элемента массива местами (массив может быть любого ссылочного типа);
 
-//2. Написать метод, который преобразует массив в ArrayList;
+
+  public static void main(String[] args) {
     String[] arrayStr = {"A","B","C"};
+    Integer[] arrayInt = {1,2,3};
+    //1. Написать метод, который меняет два элемента массива местами (массив может быть любого ссылочного типа);
+    exchangeOfElements(arrayStr, 0, 2);
+    exchangeOfElements(arrayInt, 2, 1);
+    //2. Написать метод, который преобразует массив в ArrayList;
+    //пример со строковым массивом
+    System.out.println();
     List<String> stringList = arrayToArrayList(arrayStr);
     System.out.println(stringList);
     System.out.println(stringList.get(0) instanceof String);
-
-    Integer[] arrayInt = {1,2,3};
+    //пример с числовым массивом
     List<Integer> stringList2 = arrayToArrayList(arrayInt);
     System.out.println(stringList2);
     System.out.println(stringList2.get(0) instanceof Integer);
@@ -27,6 +32,16 @@ public class Main {
 //Не забываем про метод добавления фрукта в коробку.
 
   }
+
+  //Метод который меняет два элемента массива местами
+  private static <T> void exchangeOfElements(T[] array, int aPosition, int bPosition) {
+    System.out.printf("Массив до обмена: %s\n",Arrays.toString(array));
+    var bufer = array[aPosition];
+    array[aPosition]=array[bPosition];
+    array[bPosition]=bufer;
+    System.out.printf("Массив после обмена: %s\n",Arrays.toString(array));
+  }
+
 
   //Метод который преобразует массив в ArrayList
   private static <T> List<T> arrayToArrayList(T[] array) {
