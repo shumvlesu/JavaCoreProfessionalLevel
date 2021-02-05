@@ -39,6 +39,30 @@ public class Main {
     //а в другую перекидываются объекты, которые были в первой;
 
     //Не забываем про метод добавления фрукта в коробку.
+    System.out.println();
+    Box<Apple> appleBox = new Box<>(); //коробка для яблок
+    Box<Orange> orangeBox = new Box<>();//коробка для апельсинов
+    orangeBox.addFruit(new Orange(), 1); //закинем 1 апельсин
+    appleBox.addFruit(new Apple(), 3); //закинем 3 яблока
+    System.out.printf("Коробки по весу %s\n", appleBox.compare(orangeBox) ? "равны": "не равны");
+    orangeBox.addFruit(new Orange(), 1); //докинем 1 апельсин
+    //снова сверим ящики
+    System.out.printf("Коробки по весу %s\n", appleBox.compare(orangeBox) ? "равны": "не равны");
+
+
+    //перекидываем в пустую коробку
+    System.out.println();
+    Box<Orange> orangeBoxEmpty = new Box<>();//коробка для апельсинов, сейчас пустая
+    System.out.println("Полная коробка содержит: "+orangeBox.getFruitsBox().size());
+    System.out.println("Пустая коробка содержит: "+orangeBoxEmpty.getFruitsBox().size());
+    //перекидываем
+    orangeBox.shiftTo(orangeBoxEmpty);
+    System.out.println("Теперь полная коробка содержит: "+orangeBox.getFruitsBox().size());
+    System.out.println("Теперь бывшая пустой коробка содержит: "+orangeBoxEmpty.getFruitsBox().size());
+
+    //а вот яблоки уже не даст в апельсиновую коробку закинуть
+    //компилятор будет ругаться
+    //appleBox.shiftTo(orangeBox);
 
 
   }
