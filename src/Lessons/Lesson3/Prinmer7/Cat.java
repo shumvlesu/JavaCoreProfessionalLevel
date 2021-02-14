@@ -5,6 +5,9 @@ import java.io.Serializable;
 public class Cat implements Serializable {
     private String name;
     private int age;
+    private transient String breed;//transient говорит что этополе сериализовывться не будет
+    //Если есть поля и они объектного типа. Классы этих объектов тоже должны быть сериализуемыми
+    //Иначе будет исключение
 
     public Cat() {
     }

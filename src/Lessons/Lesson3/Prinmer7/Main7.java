@@ -13,6 +13,7 @@ public class Main7 {
         //ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("src/Lessons/Lesson3/text2.txt"));
         //только если сам класс изменится, пока мы храним объект в файле, то мы получим исключение ClassNotFoundException
 
+
         objectOutputStream.writeObject(cat);
         System.out.println(Arrays.toString(byteArrayOutputStream.toByteArray()));
 
