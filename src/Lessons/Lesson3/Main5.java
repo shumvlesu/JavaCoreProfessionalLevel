@@ -5,6 +5,8 @@ import java.util.Arrays;
 
 public class Main5 {
   public static void main(String[] args) throws IOException {
+    //BufferedOutputStream, BufferedInputStream нужны для буферизации данных которые откудато читаются или кудато пишутся
+    //в нашем примере в файл из файла
     byte[] array = new byte[10];
     Arrays.fill(array, (byte) 66);
     //второй параметр это размер буфера
