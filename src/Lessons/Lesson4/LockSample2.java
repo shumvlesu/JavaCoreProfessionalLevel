@@ -23,7 +23,7 @@ public class LockSample2 {
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
-    printMessage("Начало не сихрнизированного блока");
+    printMessage("Конец не сихрнизированного блока");
 
     //синхронизация по объекту
     //когда объект lockSample2 войдет в метод method1 он не навесит блокировку на lockSample2
