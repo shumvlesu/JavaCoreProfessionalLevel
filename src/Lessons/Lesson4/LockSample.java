@@ -25,9 +25,20 @@ public class LockSample {
     }
   }
 
+  //методы method2() и method3() идентичны по своей блокеровке
+  // понятно что method2 удобнее писать чем method3
   public synchronized void method2() {
     for (int i = 0; i < 3; i++) {
       printMessage("Пока!");
+    }
+  }
+
+
+  public void method3() {
+    synchronized (this) {
+      for (int i = 0; i < 3; i++) {
+        printMessage("Пока!");
+      }
     }
   }
 

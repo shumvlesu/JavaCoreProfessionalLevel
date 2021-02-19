@@ -10,6 +10,7 @@ public class LockSample2 {
     LockSample2 lockSample2 = new LockSample2();
     new Thread(() -> lockSample2.method1()).start();
     new Thread(() -> lockSample2.method1()).start();
+
 //    new Thread(() -> lockSample2.method2()).start();
 
   }
@@ -42,6 +43,9 @@ public class LockSample2 {
 //      printMessage("Пока!");
 //    }
 //  }
+
+
+
 
   public void printMessage(String message) {
     System.out.println(Thread.currentThread().getName() + " : " + message);
