@@ -60,10 +60,10 @@ public class ExecutorSample {
 
         //Пример с произвольным количеством  выполняемых потоков
         //чтобы попробовать закоментить сверху прмимер синглового выполнения
-//    executorService = Executors.newFixedThreadPool(2);//разрешаю только 2 одновременных потока
-//    executorService.execute(runnable1);
-//    executorService.execute(runnable2);
-//    executorService.execute(runnable3);
+        //executorService = Executors.newFixedThreadPool(2);//разрешаю только 2 одновременных потока
+        //executorService.execute(runnable1);
+        //executorService.execute(runnable2);
+        //executorService.execute(runnable3);
 
 
         //Чтобы завершить работу executorService и прошрамма завершилась
