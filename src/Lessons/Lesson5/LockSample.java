@@ -1,6 +1,7 @@
 package Lessons.Lesson5;
 
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockSample {
