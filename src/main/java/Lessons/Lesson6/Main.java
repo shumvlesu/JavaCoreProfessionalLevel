@@ -3,7 +3,7 @@ package Lessons.Lesson6;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-//что бы добавить maven в обычный проект
+//что-бы добавить maven в обычный проект
 //Нажать на папку с проектом правой кнопкой
 //Выбрать "Добавить поддержку фреймворка" введите сюда описание изображения
 //Выбрать из списка Maven
@@ -13,7 +13,13 @@ import org.apache.log4j.Logger;
 
 public class Main {
   private static final Logger LOG = LogManager.getLogger(Main.class);
-  public static void main(String[] args) {
 
+  public static void main(String[] args) {
+    LOG.trace("trace");
+    LOG.debug("debug");
+    LOG.info("info");
+    LOG.warn("warn");
+    LOG.error("error");
+    LOG.fatal("fatal");
   }
 }
