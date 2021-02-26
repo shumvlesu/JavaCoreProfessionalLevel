@@ -17,9 +17,9 @@ public class Main {
   public static void main(String[] args) {
     LOG.trace("trace");
     LOG.debug("debug");
-    LOG.info("info");
-    LOG.warn("warn");
-    LOG.error("error");
-    LOG.fatal("fatal");
+    LOG.info("info");//
+    LOG.warn("warn"); //что-то происходит что мы не планировали но еще не фатальное
+    LOG.error("error");//тут и так понятно, ошибка , но программа еще может работать
+    LOG.fatal("fatal");//нам пиздешность, выполнение программы далее не имеет смысла
   }
 }
