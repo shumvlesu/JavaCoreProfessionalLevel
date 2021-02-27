@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <Property name="basePath">logs</Property>
+        <Property name="basePath">logs</Property> <!--в папку logs будет писаться файл app.log-->
     </Properties>
     <Appenders>
         <!-- тэг Appenders - подрозумевает под собой куда мы будем писать наши логи.
         пишу в файл-->
-       <File name="MyFile" fileName="logs/app.log">
+        <File name="MyFile" fileName="logs/app.log">
+            <BurstFilter level="fatal" rate="16" maxBurst="100" />// а в файл пишутся только логи уровня fatal У ПРЕПОДОВАТЕЛЯ НЕ ПОЛУЧИЛОСЬ ОТДЕЛИТЬ УРОВНИ ЛОГОВ
             <JsonLayout/><!--логи пишуться в файл в виде json объекта
             для JsonLayout нужна доп библиотека зависемости в pom.xml - com.fasterxml.jackson.core-->
         </File>
@@ -25,7 +26,12 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Root level="trace">
+        <!--        <Root level="trace">-->
+        <!--            <AppenderRef ref="Console"/>-->
+        <!--            <AppenderRef ref="MyFile"/>-->
+        <!--        </Root>-->
+
+        <Root level="trace">//можно задать параметр что выводится только trace. У ПРЕПОДОВАТЕЛЯ НЕ ПОЛУЧИЛОСЬ ОТДЕЛИТЬ УРОВНИ ЛОГОВ
             <AppenderRef ref="Console"/>
             <AppenderRef ref="MyFile"/>
         </Root>

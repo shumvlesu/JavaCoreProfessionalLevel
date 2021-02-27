@@ -29,15 +29,29 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
   private static final Logger LOG = LogManager.getLogger(Main.class);
+
   public static void main(String[] args) {
-  //LOG.trace("trace");//Тогда когда нужно выводить очень подробно информацию строчка за строчкой.
-  //LOG.debug("debug");//Какая-то доп инф которая нам не всегда нужна.
-  //LOG.info("info");//Просто информативные сообщения.
-  //LOG.warn("warn");//Что-то происходит что мы не планировали но еще не фатальное.
-  //LOG.error("error");//Тут и так понятно, ошибка , но программа еще может работать.
-  //LOG.fatal("fatal");//Нам пиздешность, выполнение программы далее не имеет смысла.
+    //LOG.trace("trace");//Тогда когда нужно выводить очень подробно информацию строчка за строчкой.
+    //LOG.debug("debug");//Какая-то доп инф которая нам не всегда нужна.
+    //LOG.info("info");//Просто информативные сообщения.
+    //LOG.warn("warn");//Что-то происходит что мы не планировали но еще не фатальное.
+    //LOG.error("error");//Тут и так понятно, ошибка , но программа еще может работать.
+    //LOG.fatal("fatal");//Нам пиздешность, выполнение программы далее не имеет смысла.
 
     LOG.trace("Это trace сообщение.");
+    LOG.fatal("Это сообщение запишится только в файл");
+
+    Main main = new Main();
+    main.divide(2, 0);
 
   }
+
+  public int divide(int a, int b) {
+    if (b == 0) {
+      LOG.error("Попытка делить на 0, числитель: {}", a);
+      return -1;
+    }
+    return a / b;
+  }
+
 }
