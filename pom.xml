@@ -29,6 +29,15 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.12.1</version>
         </dependency>
+
+        <!--зависимость для unit тестирования-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     
 </project>
