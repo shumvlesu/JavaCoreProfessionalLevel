@@ -53,7 +53,7 @@ class CalculatorTest {
   //@AfterAll - выполнится после всех тестов класса CalculatorTest
 
   //@Test//аннотация говорит что это тест
-  @CsvFileSource(resources = "src/main/resources/input.csv")
+  //@CsvFileSource(resources = "src/main/resources/input.csv")
   @ParameterizedTest //аннотация параметризуемого теста , теперь можно написать входные параметры
   void addTest(double a, double b, double result) {
     //double a = 6;

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="basePath">logs</Property> <!--в папку logs будет писаться файл app.log-->
+    </Properties>
+    <Appenders>
+        <!-- тэг Appenders - подрозумевает под собой куда мы будем писать наши логи.
+        пишу в файл-->
+        <File name="MyFile" fileName="logs/app.log">
+            <BurstFilter level="fatal" rate="16" maxBurst="100" />// а в файл пишутся только логи уровня fatal У ПРЕПОДОВАТЕЛЯ НЕ ПОЛУЧИЛОСЬ ОТДЕЛИТЬ УРОВНИ ЛОГОВ
+            <JsonLayout/><!--логи пишуться в файл в виде json объекта
+            для JsonLayout нужна доп библиотека зависемости в pom.xml - com.fasterxml.jackson.core-->
+        </File>
+        <!--пишу в консоль-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--свойство pattern задает шаблон вывода лога, в данном случае в консоль
+            %-5p - печатает уровень сообщения (trace, debug, warning и т.д.),
+            5p означает что на любой уровень логирования выйдет не больше 5 символов
+            %d{yyyy-MM-dd HH:mm:ss} - время сообщения (2021-02-27 13:43:02)
+            %t - имя метода из которого вызвался объект логгера
+            %C - указание полного имени класса
+            %F:%L - имя файла и имя строки где был вызван объект логгера
+            %m - само сообщение
+            %n - перенос строки-->
+            <PatternLayout pattern="%-5p %d{yyyy-MM-dd HH:mm:ss} [%t] %C (%F:%L) - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!--        <Root level="trace">-->
+        <!--            <AppenderRef ref="Console"/>-->
+        <!--            <AppenderRef ref="MyFile"/>-->
+        <!--        </Root>-->
+
+        <Root level="trace">//можно задать параметр что выводится только trace. У ПРЕПОДОВАТЕЛЯ НЕ ПОЛУЧИЛОСЬ ОТДЕЛИТЬ УРОВНИ ЛОГОВ
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="MyFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

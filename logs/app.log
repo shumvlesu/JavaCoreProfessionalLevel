@@ -1,0 +1,168 @@
+{
+  "instant" : {
+    "epochSecond" : 1614445331,
+    "nanoOfSecond" : 873019400
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=4.0, b=6.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445331,
+    "nanoOfSecond" : 998910200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=4.0, b=6.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445332,
+    "nanoOfSecond" : 11902000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=3.0, b=3.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445332,
+    "nanoOfSecond" : 22895000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=100.0, b=100.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445332,
+    "nanoOfSecond" : 29891200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=45.0, b=56.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445333,
+    "nanoOfSecond" : 153198900
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "Как бы удаляем ненужные объекты",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445527,
+    "nanoOfSecond" : 267236000
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=4.0, b=6.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445527,
+    "nanoOfSecond" : 375170100
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=4.0, b=6.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445527,
+    "nanoOfSecond" : 381167200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=3.0, b=3.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445527,
+    "nanoOfSecond" : 387161700
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=100.0, b=100.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445527,
+    "nanoOfSecond" : 392158200
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "a=45.0, b=56.0",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
+{
+  "instant" : {
+    "epochSecond" : 1614445528,
+    "nanoOfSecond" : 47754800
+  },
+  "thread" : "main",
+  "level" : "INFO",
+  "loggerName" : "Lessons.Lesson6.CalculatorTest",
+  "message" : "Как бы удаляем ненужные объекты",
+  "endOfBatch" : false,
+  "loggerFqcn" : "org.apache.logging.log4j.spi.AbstractLogger",
+  "threadId" : 1,
+  "threadPriority" : 5
+}
