@@ -90,7 +90,7 @@ class CalculatorTest {
       double out = a*b;
       result.add(Arguments.arguments( a, b, out));
     }
-    return result.stream();
+      return result.stream();
   }
 
 
