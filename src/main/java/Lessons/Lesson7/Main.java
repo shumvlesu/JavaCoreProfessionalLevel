@@ -6,9 +6,11 @@ public class Main {
     //Class - базовый класс рефлексии? является метаклассом для всех классов в джаве
     // это значит что он содержит информацию о самой стркутуре класса (какие в нем поля, методы и т.д.)
     Cat cat = new Cat("Барсик", 4, 4);
-    //3 способа получить экземпляра класса класс кошки
+    //3 способа получить экземпляра класса Class кошки
     Class catClass = Cat.class; //1й
+    System.out.println(catClass.getName()); //Lessons.Lesson7.Cat
     catClass = Class.forName("Lessons.Lesson7.Cat");//2й
+    System.out.println(catClass.getSimpleName()); //Cat
     catClass = cat.getClass();//3й
 
 
