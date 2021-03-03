@@ -16,4 +16,8 @@ public class Cat extends Animal implements Jumpable {
   private int getQuantitySleep() {
     return quantitySleep;
   }
+
+  public void setQuantitySleep(int quantitySleep) {
+    this.quantitySleep = quantitySleep;
+  }
 }

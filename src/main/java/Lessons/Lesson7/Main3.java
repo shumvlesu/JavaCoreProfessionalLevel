@@ -28,13 +28,20 @@ public class Main3 {
     }
 
 
-    System.out.println();
-    Method quantityMethod = catClass.getDeclaredMethod("getQuantitySleep");// getMethod() аналгичен getMethods()
-    System.out.println(quantityMethod.getName());
-    quantityMethod.setAccessible(true);//усатновление права вызова этого метода из метода main
-    //выполняем метод
-    System.out.println(quantityMethod.invoke(myCat));
 
+    System.out.println();
+    Method quantityGetMethod = catClass.getDeclaredMethod("getQuantitySleep");// getMethod() аналгичен getMethods()
+    System.out.println(quantityGetMethod.getName());
+    quantityGetMethod.setAccessible(true);//усатновление права вызова этого метода из метода main
+    //выполняем метод
+    System.out.println(quantityGetMethod.invoke(myCat));
+
+
+    Method quantitySetMethod = catClass.getDeclaredMethod("setQuantitySleep", int.class);//если у метода есть аргументы то надо тоже указать их, иначе их не найдем
+    quantitySetMethod.setAccessible(true);
+    quantitySetMethod.invoke(myCat,20);//устанавливаю значение
+    //смотрю что получилось
+    System.out.println(quantityGetMethod.invoke(myCat));
 
   }
 }
