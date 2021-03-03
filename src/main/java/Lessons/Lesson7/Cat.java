@@ -13,7 +13,7 @@ public class Cat extends Animal implements Jumpable {
     System.out.println("Кошка прыгнула");
   }
 
-  public int getQuantitySleep() {
+  private int getQuantitySleep() {
     return quantitySleep;
   }
 }
