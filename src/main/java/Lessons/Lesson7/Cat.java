@@ -1,6 +1,8 @@
 package Lessons.Lesson7;
 
 public class Cat extends Animal implements Jumpable {
+
+  @TimeUnit(name = "минуты") //используем нашу аннотацию. можем изменить на наше значение объявленого в аннотации поля name
   private int quantitySleep; //время сна кошки
 
   public Cat(String name, int age, int quantitySleep) {
